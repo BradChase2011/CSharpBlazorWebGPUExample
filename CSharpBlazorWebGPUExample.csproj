@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	<!-- <WasmEnableExceptionHandling>true</WasmEnableExceptionHandling> -->
+	<!-- <WasmEnableThreads>true</WasmEnableThreads> -->
+	<!-- <WasmEnableSIMD>true</WasmEnableSIMD> -->
+	<!-- <RunAOTCompilation>true</RunAOTCompilation> -->	
+	<!-- <WasmAllowUndefinedSymbols>true</WasmAllowUndefinedSymbols> -->
+	<WasmBuildNative>true</WasmBuildNative>
+	<EmccExtraLDFlags>-s USE_WEBGPU=1 -s NO_EXIT_RUNTIME=1 --js-library '.\lib\lib_webgpu.js'</EmccExtraLDFlags>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<NativeFileReference Include="lib\lib_webgpu_cpp20.cpp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.0-preview.3.24172.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.0-preview.3.24172.13" PrivateAssets="all" />
+  </ItemGroup>
+</Project>
