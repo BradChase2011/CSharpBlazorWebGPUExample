@@ -2,28 +2,30 @@
 
 namespace WebGpu
 {
-    using WGpuAdapter = WebGpu.WGpuObjectBase;
-    using WGpuCanvasContext = WebGpu.WGpuObjectBase;
-    using WGpuDevice = WebGpu.WGpuObjectBase;
-    using WGpuQueue = WebGpu.WGpuObjectBase;
-    using WGpuRenderPipeline = WebGpu.WGpuObjectBase;
-    using WGpuCommandEncoder = WebGpu.WGpuObjectBase;
-    using WGpuTextureView = WebGpu.WGpuObjectBase;
-    using WGpuTexture = WebGpu.WGpuObjectBase;
-    using WGpuRenderPassEncoder = WebGpu.WGpuObjectBase;
-    using WGpuQuerySet = WebGpu.WGpuObjectBase;
-    using WGpuBindingCommandsMixin = WebGpu.WGpuObjectBase;
-    using WGpuRenderCommandsMixin = WebGpu.WGpuObjectBase;
-    using WGpuCommandBuffer = WebGpu.WGpuObjectBase;
-    using WGpuPipelineLayout = WebGpu.WGpuObjectBase;
-    using WGpuShaderModule = WebGpu.WGpuObjectBase;
-    using WGpuBuffer = WebGpu.WGpuObjectBase;
-    using WGpuBindGroupLayout = WebGpu.WGpuObjectBase;
-    using WGpuBindGroup = WebGpu.WGpuObjectBase;
-    using WGpuImageBitmap = WebGpu.WGpuObjectBase;
-    using WGpuComputePipeline = WebGpu.WGpuObjectBase;
-    using WGpuComputePassEncoder = WebGpu.WGpuObjectBase;
+    using WGpuAdapter = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuCanvasContext = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuDevice = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuQueue = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuRenderPipeline = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuCommandEncoder = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuTextureView = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuTexture = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuRenderPassEncoder = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuQuerySet = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuBindingCommandsMixin = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuRenderCommandsMixin = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuCommandBuffer = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuPipelineLayout = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuShaderModule = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuBuffer = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuBindGroupLayout = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuBindGroup = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuImageBitmap = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuComputePipeline = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuComputePassEncoder = IntPtr;// WebGpu.WGpuObjectBase;
+    using WGpuObjectBase = IntPtr;
 
+    /*
     [StructLayout(LayoutKind.Sequential)]
     public struct WGpuObjectBase
     {
@@ -34,7 +36,7 @@ namespace WebGpu
             ptr = new IntPtr(value);
         }
     }
-
+    */
 
     public static unsafe class Interop
     {

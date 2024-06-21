@@ -10,6 +10,7 @@
 	<!-- <RunAOTCompilation>true</RunAOTCompilation> -->	
 	<!-- <WasmAllowUndefinedSymbols>true</WasmAllowUndefinedSymbols> -->
 	<WasmBuildNative>true</WasmBuildNative>
+	<WasmEnableThreads>false</WasmEnableThreads>
 	<EmccExtraLDFlags>-s USE_WEBGPU=1 -s NO_EXIT_RUNTIME=1 --js-library '.\lib\lib_webgpu.js'</EmccExtraLDFlags>
   </PropertyGroup>
 
